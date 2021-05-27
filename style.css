@@ -1,0 +1,253 @@
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	height: 100px;
+	width: 100%;
+	border:none;
+	background:purple;
+}
+header #face-heading{
+	width:50%;
+	height:100%;
+	border:none;
+	color:white;
+	font-size: 45px;
+	text-align:;
+	padding-top:1.4%;
+	padding-left: 12%;
+	font-weight: bold;
+	font-family: arial;
+	float:left;
+}
+header #login-input{
+	width:50%;
+	height:100%;
+	border:none;
+	float:left;
+}
+#login-input form{
+	height: 100%;
+	width:100%;
+	border:none;
+
+}
+form .input-feilds{
+	height: 100%;
+	width:35%;
+	border:none;
+	float:left;
+	color:white;
+}
+.input-feilds span{
+	border:none;
+	padding-left: 25%;
+	padding-right: 15%;
+	position: relative;
+	top: 22%;	
+}
+.input-feilds input{
+	margin-left: 25%;
+	margin-top: 10%;
+	width:65%;
+	padding-left: 3px;
+    font-size:15px;
+	outline: none;
+	background: #efefef;
+
+}
+.msg-show{
+	padding-left: 25%;
+	border:none ;
+	font-weight: lighter;
+	font-family: arial narrow;
+	font-size:13px;	
+}
+#login-input form input[type="button"],
+#login-input form input[type="submit"]{
+	background: blue;
+	width:50px;
+	height:20px;
+	color:white;
+	border:none;
+	cursor:pointer;
+	position:relative;
+	top:45%;
+	
+}
+#login-input form input[type="button"]:hover,
+#login-input form input[type="submit"]:hover{
+
+	box-shadow: 0px 0px 5px white;
+}
+/*------main-body----*/
+#fb-body{
+	width:100%;
+	height:620px;
+	border:none;
+	background: #efefef;
+}
+#fb-body .body-parts-1, .body-parts-2{
+	height:100%;
+	width:50%;
+	border:none;
+	float:left;
+}
+.body-parts-1 h2{
+	font-size:35px;
+	font-family: arial;
+	padding-left: 23.5%;
+	padding-top: 3%;
+}
+.body-parts-1 h3{
+	font-family: arial;
+	padding-left: 23.5%;
+	padding-top: 1%;
+
+}
+#recent-log{
+	height:30%;
+	width:70%;
+	border:none;
+	margin-left: 24%;
+	margin-top: 2.5%;
+}
+#recent-log .profiles-1, .profiles-2, .profiles-3{
+	height: 100%;
+	width:30%;
+	border:1px solid #efefef;
+	display: inline-block;
+	position: relative;
+
+}
+.profiles-2, .profiles-3{
+	margin-left: 4%;
+}
+.profiles-1 img{
+    height:100%;
+    width:100%;
+    background-size:cover; 
+
+}
+.profiles-2 img{
+    height:100%;
+    width:100%;
+    background-size:cover; 
+
+}
+
+.body-parts-2 h2{
+	color:red;
+	font-size:35px;
+	font-family: arial;
+	padding-left: 2%;
+	padding-top: 3%;
+}
+.body-parts-2 h3{
+	font-family: arial;
+	padding-top: 1%;
+	padding-left: 2.5%;
+}
+.body-parts-2 form{
+	height:70%;
+	width:60%;
+	border:none;
+	margin-left:2.5%;
+	margin-top: 1%;
+
+}
+.body-parts-2 form input[type="text"],
+.body-parts-2 form input[type="number"],
+.body-parts-2 form input[type="email"],
+.body-parts-2 form input[type="password"]
+{
+	height:33px;
+	width:42%;
+	margin-top:7px;
+	padding-left: 8px;
+	border:1px solid grey;
+	border-radius: 5px;
+	outline-color: blue;
+}
+
+
+.body-parts-2 form input[type="password"],
+.body-parts-2 form input[type="email_number"]{
+	width:85%;
+	height:33px;
+	margin-top:7px;
+	padding-left: 8px;
+	border:1px solid grey;
+	border-radius: 5px;
+	outline-color: blue;
+}
+.body-parts-2 form .span-1{
+	display: inline-block;
+	height: 20px;
+    width:100px;
+	font-size: 17px;
+	font-weight: bold;
+	border:none;
+	color:grey;
+	margin-top:10px;
+	margin-bottom:5px;  
+}
+.body-parts-2 form select{
+	height: 30px;
+	margin-top:5px;
+	margin-right:4px; 
+
+}
+
+.body-parts-2 form .span-2{
+	display: inline-block;
+	height: 20px;
+    width:100px;
+	font-size: 15px;
+	font-weight: bold;
+	border:none;
+	color:grey;
+	margin-top:8px;
+	margin-bottom:5px;  
+}
+.body-parts-2 form input[type="radio"]{
+	margin-left:5px;
+	margin-bottom: 10px;
+}
+.body-parts-2 form p{
+	font-size: 11px;
+	color:grey;
+	font-family: arial;
+}
+.body-parts-2 form a{
+	text-decoration:none; 
+}
+.body-parts-2 form input[type="submit"]{
+	background: green;
+	width:165px;
+	height:30px;
+	color:white;
+	border:none;
+	cursor:pointer;
+	font-size:17px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+.body-parts-2 form input[type="submit"]:hover{
+	background: darkgreen;
+}
+.body-parts-2 form #para{
+	font-size:12px;
+	color:grey;
+	font-weight: bold;
+	
+}
+.body-parts-2 form hr{
+	margin-bottom:20px;
+	width:85%;
+}
+</style>

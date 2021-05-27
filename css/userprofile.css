@@ -1,0 +1,566 @@
+<style>
+body{
+	background:lightgrey;
+	
+}
+#changeprofile{
+	height: 150px;
+	width:25%;
+	border:1px solid purple;
+	background: #fff;
+	position: absolute;
+	left:50%;
+	top:58%;
+	border-radius:10px; 
+	transform: translateX(-50%);
+	z-index:-1;
+}
+#changeprofile h5{
+	text-align: center;
+	display: inline-block;
+	height: 20%;
+	width:80%;
+	margin-left:10%;
+	margin-top:2%;
+	border:none;
+}
+#changeprofile span i{
+	height: 20%;
+	width:10%;
+	border-radius:50%;
+	background: silver;
+	font-size: 25px;
+	text-align:center;
+	font-weight:100;
+	margin-left:-5%;
+	margin-top:1%; 
+	cursor: pointer;
+}
+#changeprofile .box{
+	height: 50%;
+	width: 100%;
+
+	margin-top:2%; 
+}
+#changeprofile .box i{
+   padding-left:10px;
+   color:purple;  
+} 
+#changeprofile .box input[type="file"]{
+  
+  margin-left:3%;
+  width:90%; 
+  cursor:pointer; 
+}
+#changeprofile input[type="submit"]{
+  width:90%;
+  
+  text-align: center;
+  background: purple;
+  color:white;
+   margin-top:2%;
+  margin-left:5%;
+  border-radius:5px;
+  border:none;
+  padding: 10px 0px;
+  font-weight: 500; 
+}
+#changeprofile input[type="submit"]:hover{
+	opacity: 0.9;
+}
+
+
+
+
+#profile-area{
+	height:500px;
+	width: 100%;
+	border-bottom:1px solid grey;
+	background: linear-gradient(to bottom, lightgreen , lightblue);
+	box-shadow: 0px 2px 5px grey;
+	
+}
+#profile-area .cover-photo{
+	height:70%;
+	width:60%;
+	border:none;
+	margin:0px auto;
+	margin-left:20%; 
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	background-image: url('images/cover.jpg');
+	background-size:100% 100%;
+	cursor:pointer;	
+	box-shadow: 0px 2px 3px blue; 
+}
+#profile-area .cover-photo .profile{
+	height:48%;
+	width:20%;
+	border:5px solid white;
+	border-radius: 50%;
+	margin-left:40%;
+	margin-top:22%;
+	cursor:pointer;
+	float:left;
+	box-shadow: 1px 1px 20px 2px blue;
+
+
+}
+.profile img{
+	height: 100%;
+	width:100%;
+	border-radius:50%;
+}
+.profile img:hover{
+	opacity: 0.9;
+}
+.profile i{
+	height:40px;
+	width:40px;
+	border:none;
+	border-radius:50%;
+	background: silver;
+	margin-left:75%;
+	position: relative;
+	top:-25%;
+	z-index: 20; 
+	padding-top: 5%;
+	padding-left:5%;
+	font-size:20px;
+}
+#profile-area .cover-photo .change-cover-photo{
+	height: 10%;
+	width:19%;
+	border:none;
+	background: linear-gradient(to left,red,green);
+	border-radius:10px;
+	padding-top: 0.5%;
+	color:white;
+	cursor: pointer;
+	text-align:center;
+    color:white;
+    float:left;
+   margin-left:20%;
+   margin-top:33%;
+	
+}
+#profile-area .cover-photo .change-cover-photo:hover{
+	background: linear-gradient(to right,red,green);
+}
+.change-cover-photo span{
+	padding-left: 5px;
+}
+#profile-area h2{
+	margin-top:1.5%; 
+	border:none;
+  text-align: center;
+  font-weight: 700;
+}
+#profile-area h6{
+	text-align: center;
+	border:none;
+}
+#profile-area hr{
+	width: 55%;	
+	margin: 0px auto;
+	height: 1px;
+
+}
+#profile-area #navigation{
+	height: 10%;
+	width:55%;
+	border:none;
+	margin: 0px auto;
+	display: flex;
+}
+#profile-area #navigation .navigations{
+	height: 100%;
+	width:50%;
+	border:none;
+	display: flex;
+	
+}
+#profile-area #navigation .navigations ul{
+	height: 100%;
+	width:100%;
+	border:none;
+	list-style: none;
+	display: flex;
+	
+}
+#profile-area #navigation .navigations ul li{
+	height: 100%;
+	width:16%;
+	border:none;
+	text-align: center;
+	padding-top: 2.5%;
+	cursor: pointer;
+	font-weight: 500;
+	
+}
+#profile-area #navigation .navigations ul li:nth-child(3),
+#profile-area #navigation .navigations ul li:nth-child(3):hover{
+   width:36%;
+   border-radius: 8%;
+
+}
+#profile-area #navigation .navigations ul li:nth-child(3) span{
+	font-weight: 300;
+	font-size:13px;
+}
+#profile-area #navigation .navigations ul li:hover{
+	margin-top:0.5%; 
+	background: #efefef;
+	height: 90%;
+	width:15%;
+	border-radius: 10%;
+
+}
+.navigations .add-story{
+	margin-left:24%;
+	color:white;
+	background: blue;
+
+}
+.navigations .add-story:hover{
+	background: darkblue;
+}
+.navigations .add-story,
+.navigations .edit-profile,
+.navigations .dots{
+	height: 77%;
+	width:30%;
+	border:none;
+	text-align: center;
+	padding-top: 1.5%;
+	font-size:15px;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top:1%; 
+	border-radius:10px;
+}
+.navigations .edit-profile,
+.navigations .dots{
+	margin-left:2%;
+	background: silver;
+}
+.navigations .edit-profile:hover,
+.navigations .dots:hover{
+	background: lightgrey;
+}
+.navigations .dots{
+	width:12%;
+	padding-top: 1%;
+
+}
+.navigations span{
+	padding-left: 2%;
+
+}
+
+
+/*-------body-section start---------*/
+.body{
+	display: flex;
+	background:lightgrey;
+}
+.body .part-1{
+	width:47%;
+	height: inherit;
+	border:none;
+}
+.body .userinfo{
+	height:470px;
+	width:50%;
+	margin-left:49%;
+	border:none;
+	border-radius: 10px;
+	margin-top:2%; 
+	
+	background: #fff; 
+	box-shadow: 1px 1px 2px 1px grey;
+
+}
+.body .userinfo h5, .body .userphotos h5, .body .userfriends h5{
+	padding-top:2.5%;
+	padding-left:5%; 
+	font-weight: 700; 
+	border:none;
+}
+.body .userinfo ul{
+	height: 92%;
+	width:100%;
+	border:none;
+	list-style: none;
+	margin-top:-2%; 
+	
+	
+}
+.body .userinfo ul li:nth-child(1){
+	margin-top:5%;
+}
+.body .userinfo ul li{
+	height: 5%;
+	width:90%;
+	border:none;
+	margin:5% 2% 3%; 		
+		
+}
+.body .userinfo ul li i{
+    height:90%;
+	width:9%;
+	border:none;
+	text-align:center;
+	color:purple;
+}
+.body .userinfo ul li a{
+    color:black;
+    text-decoration:none;
+    font-weight: 500;
+}
+.body .userinfo ul li a:hover{
+   text-decoration:underline;
+}
+.body .userinfo ul .buttons{
+	height: 8%;
+	width:91%;
+	border:none;
+	margin:6% auto;	
+}
+.body .userinfo ul .buttons input[type="submit"]{
+	height: 100%;
+	width:100%;
+	text-align:center;
+	border-radius:5px;
+	border:none;
+	outline:none;
+	font-weight: 500;
+}
+.body .userinfo ul .buttons input[type="submit"]:hover{
+	background: lightgrey;
+}
+.body .userphotos , .body .userfriends{
+	height:470px;
+	width:50%;
+	margin-left:49%;
+	border:1px solid blue;
+	border-radius: 10px;
+	margin-top:2%; 
+	
+	background: #fff; 
+	box-shadow: 1px 1px 2px 1px grey;
+}
+.body .userphotos a, .body .userfriends a{
+	color:black;
+}
+.body .userphotos span, .body .userfriends span{
+	font-weight: 400;
+	padding-left: 42%;
+}
+.body .userphotos span a, .body .userfriends span a{
+	color:blue;
+}
+.body .userphotos span a:hover,
+.body .userfriends span a:hover{
+    text-decoration: none;
+    background: lightgrey;
+    border-radius:5px;
+
+}
+
+.body .userfriends{
+   height:450px;	
+}
+
+/*------part-2 start------*/
+
+.body .part-2{	
+	width:53%;
+	height: inherit;
+	border:none;
+}
+
+.body .part-2 .writesometext, .body .part-2 .post-box{
+	height:8%;
+	width:60%;
+	margin-top:2%;
+	margin-left:1%; 
+	border:none;
+	border-radius: 10px;	
+	background: #fff; 
+	box-shadow: 1px 1px 2px 1px grey;
+}
+.body .part-2 .writesometext hr{
+	color: red;
+	margin-top:5px;
+	margin-bottom:-1px;
+	width: 92%;
+	margin-left:4%;
+
+}
+.body .part-2 .writesometext .parts{
+	height: 50%;
+	width:100%;
+	border:none;
+}
+.writesometext .parts img{
+	height:80%;
+	width:10%;
+	margin-left:1%; 
+	border:none;
+	border-radius: 50%;
+}
+.writesometext .parts img:hover{
+	opacity: 0.9;
+	cursor: pointer;
+}
+.writesometext .parts input[type="text"]{
+	height:80%;
+	width:85%;
+	margin-left:2%;
+	margin-top:1%; 
+	cursor: pointer;
+	padding-left: 3%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color:black;
+	border:none;
+	background: #efefef;
+
+}
+.writesometext .parts input[type="text"]:hover{
+	background: silver;
+}
+.writesometext .one{
+	display: flex;	
+}
+.writesometext .one .elements{
+	height: 70%;
+	width: 30%;
+	border:none;
+	margin: 1% auto;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;		
+}
+.writesometext .one .elements i{	
+	font-size: 20px;
+	border:none;
+	margin-top: 6%;
+	font-weight: 700;
+	
+}
+.writesometext .parts .elements:nth-child(1) i{
+	color: purple;
+}
+.writesometext .parts .elements:nth-child(2) i{
+	color: green;
+}
+.writesometext .parts .elements:nth-child(3) i{
+	color:skyblue;
+}
+
+.writesometext .one .elements span{
+	padding-left: 5%;
+	border:none;
+	font-size: 18px;
+	
+}
+.writesometext .one .elements:hover{
+	background:#efefef;
+
+}
+
+/*------------post-box-start-----------*/
+
+.body .part-2 .post-box{
+   height:6%; 
+   border:none;
+}
+.body .part-2 .post-box .one{
+   height:60%;
+   width:100%;
+   border-bottom:1px solid grey; 
+   display: flex;
+}
+.body .part-2 .post-box .one .post{
+	font-size:25px;
+    font-weight: 700;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.body .part-2 .post-box .one .filters,.body .part-2 .post-box .one .setting{
+	margin-top:1%;
+	margin-left:30%; 
+	height: 80%;
+	background: #efefef;
+	padding: 2% 3%;
+	font-weight:500;
+	border-radius: 5px;
+	cursor:pointer; 
+}
+.body .part-2 .post-box .one .filters:hover,
+.body .part-2 .post-box .one .setting:hover{
+	background: silver;
+}
+.body .part-2 .post-box .one i{
+	font-size: 20px;
+	font-weight:500;
+}
+.body .part-2 .post-box .one .filters span,.body .part-2 .post-box .one .setting span{
+	border: none;
+	padding-left:5px; 
+}
+.body .part-2 .post-box .one .setting{
+    margin-left:2%;
+}
+
+
+.body .part-2 .post-box .two{
+	height: 40%;
+	width:100%;
+
+	display: flex;
+}
+.body .part-2 .post-box .two .views{
+	height: 100%;
+	width:50%;
+	
+}
+.body .part-2 .post-box .two .views .list-view,
+.body .part-2 .post-box .two .views .grid-view{
+	height:90%;
+	width:95%;
+	border:none;
+    border-radius: 5px;
+    margin-left:5%;
+    margin-top:1%;
+    text-align: center; 
+    color:grey;   
+}
+.body .part-2 .post-box .two .views .list-view:hover,
+.body .part-2 .post-box .two .views .grid-view:hover{
+    background: #efefef;
+}
+.body .part-2 .post-box .two .views .grid-view{
+	margin-left:0%;
+}
+.body .part-2 .post-box .two .views .list-view span,
+.body .part-2 .post-box .two .views .grid-view span{
+	padding-left: 5px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+</style>
